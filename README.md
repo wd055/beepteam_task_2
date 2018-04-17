@@ -21,10 +21,10 @@
 
 `id` - уникальный идентификатор письма
 
-`sender` - имя отправителя <span style="color:orange">*</span>
+`avatar` - ссылка на аватар отправителя ![red](https://placehold.it/15/ff0000/000000?text=+)
 
-`avatar` - ссылка на аватар отправителя <span style="color:red">*</span>
+`sender` - имя отправителя ![orange](https://placehold.it/15/ffa500/000000?text=+)
 
-`theme` - тема (заголовок) письма <span style="color:green">*</span>
+`theme` - тема (заголовок) письма ![green](https://placehold.it/15/008000/000000?text=+)
 
-`snippet` - фрагмент тела письма, отображаемый в списке писем <span style="color:blue">*</span>
+`snippet` - фрагмент тела письма, отображаемый в списке писем ![blue](https://placehold.it/15/0000ff/000000?text=+)
