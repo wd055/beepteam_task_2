@@ -38,6 +38,10 @@
     display: none;
 }
 
+.mobile .email-item__checkbox {
+    margin: 20px;
+}
+
 .email-item_select .email-item__checkbox,
 .email-item:hover .email-item__checkbox {
     display: block;
