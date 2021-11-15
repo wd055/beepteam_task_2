@@ -42,7 +42,7 @@ const Emails: FC<EmailsProps> = ({ emails, selectedEmails, setSelectedEmails }) 
 	};
 
 	return (
-		<div>
+		<div className="email-list">
 			{emails.map((email) => (
 				<EmailItem
 					key={email.id}

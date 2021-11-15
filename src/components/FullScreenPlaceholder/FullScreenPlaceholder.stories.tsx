@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import FullScreenPlaceholder from './FullScreenPlaceholder';
-import { Icon24DeleteOutline } from '@vkontakte/icons';
+import { Icon56MailOutline } from '@vkontakte/icons';
 
 export default {
 	title: 'Example/FullScreenPlaceholder',
@@ -11,7 +11,7 @@ export default {
 		icon: {
 			options: ['С иконкой', 'Без иконки'],
 			mapping: {
-				'С иконкой': <Icon24DeleteOutline />,
+				'С иконкой': <Icon56MailOutline />,
 				'Без иконки': null
 			},
 			defaultValue: 'С иконкой'

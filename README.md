@@ -6,11 +6,17 @@
 
 Поддерживается адаптивность (под мобильные и десткопные устройства)
 
-Подключены eslint, style-lint, pre-commit
+Подключены eslint, style-lint, pre-commit. Использован TypeScript. Частичное покрытие тестами.
+
+[Github page Storybook](https://wd055.github.io/beepteam_task_2/)
 
 `npm i`
 
 `npm test`
+
+`npm eslint-check`
+
+`npm style-lint-check`
 
 `npm start`
 
