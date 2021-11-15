@@ -34,4 +34,4 @@ jobs:
       - name: Install deps
         run: npm i
       - name: Deploy storybook
-        run: npm run deploy-storybook
+        run: npm run deploy-storybook --ci
