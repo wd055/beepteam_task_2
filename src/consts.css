@@ -1,0 +1,34 @@
+:root {
+	/* sizes */
+	--thin-border: 1px;
+    --font-size: 14px;
+    --header-font-size: 16px;
+	--border-radius: 8px;
+
+	/* colors */
+	--border-color: rgba(0, 0, 0, 0.15);
+	--background: #ebedf0;
+	--background_hover: rgba(0, 0, 0, 0.04);
+	--background_select: rgba(0, 0, 0, 0.15);
+	--background: #ebedf0;
+	--button_background: #0095f6; 
+	--text_primary: #000000;
+	--text_secondary: #818c99;
+
+	/* props */
+	--border: solid var(--thin-border) var(--border-color);
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.align-center {
+	margin: auto 0;
+}
