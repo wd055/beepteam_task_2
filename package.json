@@ -10,12 +10,15 @@
     "eject": "react-scripts eject",
     "eslint-check": "eslint ./src",
     "eslint-fix": "eslint --fix ./src",
+    "style-lint-check": "npx stylelint **/*.css",
+    "style-lint-fix": "npx stylelint --fix **/*.css",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "npm run deploy-storybook --ci"
+    "deploy-storybook": "storybook-to-ghpages --out=./out"
   },
   "pre-commit": [
     "eslint-check",
+    "style-lint-check",
     "test"
   ],
   "dependencies": {
@@ -50,7 +53,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-react": "^7.27.0",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-scss": "^3.19.0"
   },
   "eslintConfig": {
     "extends": [

@@ -1,16 +1,16 @@
-.placeholder{
+.placeholder {
     width: 100%;
     height: 100%;
     justify-content: center;
     display: flex;
 }
 
-.placeholder__content{
+.placeholder__content {
     display: flex;
     flex-direction: column;
 }
 
-.placeholder__children{
+.placeholder__children {
     width: 100%;
     display: flex;
     flex-direction: row;

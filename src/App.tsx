@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react';
-import './App.css';
 import { IEmail } from './models/email';
 import importEmails from './data.json';
 import Emails from './components/Emails/Emails';

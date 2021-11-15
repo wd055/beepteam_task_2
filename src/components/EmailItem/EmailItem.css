@@ -1,82 +1,85 @@
 .email-item {
-	height: 48px;
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	box-sizing: border-box;
-	user-select: none;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 .email-item_select {
-	background-color: var(--background_select);
-	border-bottom: var(--border);
-	border-top: var(--border);
+    background-color: var(--background_select);
+    border-bottom: var(--border);
+    border-top: var(--border);
 }
 
 .mobile .email-item {
-	height: 68px;
+    height: 68px;
 }
 
 .email-item:hover {
-	background-color: var(--background_hover);
+    background-color: var(--background_hover);
 }
+
 .email-item_select:hover {
-	background-color: var(--background_select);
+    background-color: var(--background_select);
 }
 
 .email-item__avatar {
-	padding: 5px;
-	position: relative;
-	width: 48px;
+    padding: 5px;
+    position: relative;
+    width: 48px;
 }
 
 .email-item__checkbox {
-	cursor: pointer;
-	position: absolute;
-	margin: 12px;
-	display: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 12px;
+    display: none;
 }
 
-.email-item:hover .email-item__checkbox, .email-item_select .email-item__checkbox{
-	display: block;
+.email-item_select .email-item__checkbox,
+.email-item:hover .email-item__checkbox {
+    display: block;
 }
 
 .email-item__img {
-	border-radius: 50%;
-	max-height: 100%;
-	display: block;
+    border-radius: 50%;
+    max-height: 100%;
+    display: block;
 }
 
-.email-item:hover .email-item__img, .email-item_select .email-item__img {
-	display: none;
+.email-item_select .email-item__img,
+.email-item:hover .email-item__img {
+    display: none;
 }
 
 .email-item__content {
-	border-bottom: var(--border);
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	margin-left: 8px;
+    border-bottom: var(--border);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 8px;
 }
 
 .email-item_select .email-item__content {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 .mobile .email-item__content {
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .email-item__sender {
-	width: 150px;
-	min-width: 150px;
-	font-size: var(--header-font-size);
+    width: 150px;
+    min-width: 150px;
+    font-size: var(--header-font-size);
 }
 
 .email-item__theme {
-	margin-right: 12px;
+    margin-right: 12px;
 }
 
 .email-item__snippet {
-	color: var(--text_secondary);
+    color: var(--text_secondary);
 }
