@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    cursor: pointer;
+    height: 36px;
+    padding: 0 12px;
+    align-items: center;
+    background: var(--button_background);
+    color: var(--background);
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.button_disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button:active:not(:disabled) {
+    opacity: 0.7;
+}
+
+.button:hover:not(:active):not(:disabled) {
+    opacity: 0.9;
+}
+
+.button__icon {
+    width: min-content;
+    padding-right: 8px;
+}
+
+.button__children {
+    width: min-content;
+}

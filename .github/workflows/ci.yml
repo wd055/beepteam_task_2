@@ -1,0 +1,39 @@
+name: CI/Deploy
+
+on:
+  push:
+  pull_request:
+    types: [closed]
+
+jobs:
+  Linter:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install deps
+        run: npm i
+      - name: Linter check
+        run: npm run eslint-check
+      - name: CSS Linter check
+        run: npm run style-lint-check
+
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install deps
+        run: npm i
+      - name: Deploy storybook
+        run: npm run deploy-storybook -- --ci
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
